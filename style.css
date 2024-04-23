@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sedan:ital@0;1&display=swap');
+*{
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+     font-style: normal;
+}
+
+body{
+    margin: 0;
+    background-color: #7798AB;
+}
+
+.fejlec{
+    background-color: #0D1B1E;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+}
+
+.fejlec .fejdoboz{
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    background-color: #0D1B1E;
+    display: flex;
+    justify-content: center;
+}
+
+figure{
+    margin: 0;
+    border: 0;
+}
+
+section .bg{
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+}
+
+section .bg img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 1rem;
+}
+
+nav .menu{
+    margin: 0;
+    background-color: #C3DBC5;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .menu li{
+    list-style: none;
+    margin: 0;
+    background-color: #C3DBC5;
+}
+
+.face{
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+section .banner{
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    background: transparent;
+}
+
+section .banner h1, h2{
+    background: transparent;
+}
+
+section .banner h1{
+    font-size: 3rem;
+}
+
+section .banner h2{
+    font-size: 2rem;
+}
+
+.inf .trust-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.inf .trust-text h1{
+    font-size: 2rem;
+}
+
+.inf .trust-text p{
+    font-size: 1rem;
+    color: #323637;
+}
+
+.inf .gallery{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inf .gallery h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+section .img{
+    position: relative;
+    height: 15rem;
+}
+
+section .img img{
+    width: 100%;
+    height: 100%;
+}
+
+section .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.overlay {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7798AB;
+  }
+
+  .overlay {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7798AB;
+  }
+  
+  .img:hover .overlay {
+    opacity: 0.8;
+  }
+
+.foot{
+    background-color: #0D1B1E;
+    color:antiquewhite;
+    height: 13rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot div{
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0D1B1E;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+
+}
+
+.foot .apl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foot h1{
+    margin-bottom: 0;
+}
+
+.foot .apl .f{
+    display: flex;
+    align-items: center;
+}
+
+.foot .apl input, button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 50%;
+    height: 15%;
+    background-color: #04293f;
+    color: black;
+    border-radius: 20px;
+}
+
+.foot .apl button{
+    background-color: #7798AB;
+}
+
+.foot .soc{
+    height: 100%;
+    text-align: center;
+}
+
+.foot .soc ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot .soc h1{
+    font-size: 2.5rem;
+}
+
+.foot .soc ul li i{
+    font-size: 2rem;
+    color: #04293f;
+}
+
+@media(max-width:1024px){
+
+    section .banner h1{
+        font-size: 130%;
+    }
+    
+    section .banner h2{
+        font-size: 100%;
+    }
+
+    section .img{
+        height: 9rem;
+    }
+}
+
+@media(max-width:670px)
+{
+    .foot .soc ul {
+        padding-left: 0;
+    }
+    section .img{
+        height: 5rem;
+    }
+}
+
